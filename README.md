@@ -27,19 +27,39 @@ This MCP server provides comprehensive control over Apple Music, including:
 - Like/dislike current track
 - Get liked status of current track
 
-## Installation
+## Quick Start
 
-1. Clone or download this repository
-2. Install dependencies:
+### For Claude Users
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/thebarbican19/AppleMusic-MCP.git
+   cd AppleMusic-MCP
+   ```
+
+2. **Install dependencies**:
    ```bash
    npm install
    ```
-3. Make the script executable:
+
+3. **Make the script executable**:
    ```bash
    chmod +x index.js
    ```
 
-## Configuration
+4. **Configure Claude Desktop**:
+   - Open Claude Desktop
+   - Go to Settings (gear icon)
+   - Navigate to "Model Context Protocol" section
+   - Add a new MCP server with:
+     - **Name**: `apple-music`
+     - **Command**: `node`
+     - **Arguments**: `["/path/to/your/AppleMusic-MCP/index.js"]`
+     - **Environment**: Leave empty
+
+5. **Restart Claude** and start using Apple Music commands!
+
+### For Other MCP Clients
 
 Add this to your MCP client configuration (e.g., `.cursorrules` for Cursor):
 
@@ -48,14 +68,14 @@ Add this to your MCP client configuration (e.g., `.cursorrules` for Cursor):
   "mcpServers": {
     "apple-music": {
       "command": "node",
-      "args": ["/path/to/your/apple-music-mcp/index.js"],
+      "args": ["/path/to/your/AppleMusic-MCP/index.js"],
       "env": {}
     }
   }
 }
 ```
 
-Replace `/path/to/your/apple-music-mcp/` with the actual path to this directory.
+Replace `/path/to/your/AppleMusic-MCP/` with the actual path to this directory.
 
 ## Available Tools
 

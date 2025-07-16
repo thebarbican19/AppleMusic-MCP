@@ -1,0 +1,124 @@
+{
+  "dxt_version": "0.1",
+  "name": "apple-music-mcp",
+  "display_name": "Apple Music MCP",
+  "version": "0.0.1",
+  "description": "Control Apple Music with Claude using AppleScript on macOS",
+  "long_description": "This extension provides comprehensive control over Apple Music through Claude. You can play, pause, skip tracks, control volume, search for music, and manage playlists - all through natural conversation with Claude. The extension uses AppleScript to communicate directly with the Apple Music app on your Mac, giving you full control over your music library and streaming experience.",
+  "author": {
+    "name": "Joe Barbour",
+    "url": "https://github.com/thebarbican19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebarbican19/AppleMusic-MCP"
+  },
+  "homepage": "https://github.com/thebarbican19/AppleMusic-MCP",
+  "documentation": "https://github.com/thebarbican19/AppleMusic-MCP#readme",
+  "support": "https://github.com/thebarbican19/AppleMusic-MCP/issues",
+  "license": "MIT",
+  "keywords": ["apple-music", "music", "playback", "applescript", "macos"],
+  "server": {
+    "type": "node",
+    "entry_point": "index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/index.js"],
+      "env": {}
+    }
+  },
+  "tools": [
+    {
+      "name": "apple_music_play",
+      "description": "Resume playback in Apple Music"
+    },
+    {
+      "name": "apple_music_pause",
+      "description": "Pause playback in Apple Music"
+    },
+    {
+      "name": "apple_music_playpause",
+      "description": "Toggle play/pause in Apple Music"
+    },
+    {
+      "name": "apple_music_next_track",
+      "description": "Skip to the next track"
+    },
+    {
+      "name": "apple_music_previous_track",
+      "description": "Skip to the previous track"
+    },
+    {
+      "name": "apple_music_play_track",
+      "description": "Start playback of a specific track by name and artist"
+    },
+    {
+      "name": "apple_music_play_album",
+      "description": "Start playback of an album by name and artist"
+    },
+    {
+      "name": "apple_music_play_playlist",
+      "description": "Start playback of a playlist by name"
+    },
+    {
+      "name": "apple_music_get_current_track",
+      "description": "Get information about the currently playing track"
+    },
+    {
+      "name": "apple_music_get_player_state",
+      "description": "Get the current player state (playing, paused, stopped)"
+    },
+    {
+      "name": "apple_music_set_volume",
+      "description": "Set the sound output volume (0-100)"
+    },
+    {
+      "name": "apple_music_get_volume",
+      "description": "Get the current volume level"
+    },
+    {
+      "name": "apple_music_set_position",
+      "description": "Set the player position within the current track"
+    },
+    {
+      "name": "apple_music_get_position",
+      "description": "Get the player position within the current track"
+    },
+    {
+      "name": "apple_music_set_repeat",
+      "description": "Turn repeat on or off"
+    },
+    {
+      "name": "apple_music_get_repeat",
+      "description": "Get repeat status"
+    },
+    {
+      "name": "apple_music_set_shuffle",
+      "description": "Turn shuffle on or off"
+    },
+    {
+      "name": "apple_music_get_shuffle",
+      "description": "Get shuffle status"
+    },
+    {
+      "name": "apple_music_like_track",
+      "description": "Like the current track"
+    },
+    {
+      "name": "apple_music_dislike_track",
+      "description": "Dislike the current track"
+    },
+    {
+      "name": "apple_music_get_liked_status",
+      "description": "Get the liked status of the current track"
+    },
+    {
+      "name": "apple_music_search_and_play",
+      "description": "Search for a track and play it"
+    }
+  ],
+  "tools_generated": true,
+  "compatibility": {
+    "claude_desktop": "*"
+  }
+}
