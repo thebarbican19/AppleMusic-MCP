@@ -1,0 +1,16 @@
+{
+  "name": "apple-music-mcp",
+  "version": "0.0.1",
+  "description": "MCP server for Apple Music control via AppleScript",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "keywords": ["mcp", "apple-music", "applescript"],
+  "author": "",
+  "license": "MIT"
+} 

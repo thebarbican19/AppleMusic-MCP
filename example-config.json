@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "apple-music": {
+      "command": "node",
+      "args": ["/Users/your-username/path/to/apple-music-mcp/index.js"],
+      "env": {}
+    }
+  }
+} 

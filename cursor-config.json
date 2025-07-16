@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "apple-music": {
+      "command": "node",
+      "args": ["/Users/mojito/Sites/AppleMusic MCP/index.js"],
+      "env": {}
+    }
+  }
+} 
